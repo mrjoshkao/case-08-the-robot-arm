@@ -9,13 +9,13 @@ wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 0)
 basic.forever(function () {
     if (I == 1) {
         if (v < 90) {
-            v = v + 0.5
+            v = v + 2
             basic.pause(100)
             wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, v)
         }
     } else if (I == 2) {
         if (v > 0) {
-            v = v - 0.5
+            v = v - 2
             basic.pause(100)
             wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, v)
         }
